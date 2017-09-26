@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to WhatsUpDog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+
+    <style>
+
+      div.container {margin: 5px;
+        border: 1px solid #ccc;
+        float: center;
+        width: auto;
+      }
+
+      div.container img {
+        width: 48%;
+        height: auto;
+    }
+
+    h1 { text-align: center;}
+
+    </style>
+
+  </head>
+
+   <body>
+
+     <!-- start of form  -->
+
+     <h1>Welcome to WhatsUpDog!</h1>
+
+     <form action='/' class="ui form">
+
+  <div class="field">
+    <label>Search Dog Images by Breed</label>
+    <input type="text" placeholder="Enter a dog breed"/>
+  </div>
+  <input type="submit" class="ui blue button" value="Search Breed Images"/>
+</form>
+
+<div id="dogs">Or Select Breed to View Images:
+
+  <select id="dogz" name="doogz">
+
+  </select>
+
+</div>
+
+
+<div class="container" id="dogimgs"> </div>
+
+
+
+<script src="src/dog.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
